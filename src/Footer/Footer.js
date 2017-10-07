@@ -71,6 +71,16 @@ export default class Footer extends Component{
                                 </div>   
                             </div>        
                         </div>
+
+                        <div className="bottom-bar">
+                        <div className="container">
+                            <div className="row">
+                                <small className="copyright col-md-6 col-sm-12 col-xs-12">Copyright @ 2017. All Rights Reserved.</small>
+                                <div className="col-md-6 col-sm-12 col-xs-12 pull-right" style={{"margin-top":"8px"}}><small className="pull-right">Designed by <a style={{color:"#FFF"}} href="http://zenopsys.com/">Zenopsys technologies</a></small></div>
+                                
+                            </div>
+                        </div>
+                    </div>
                         
                  </footer>
         )

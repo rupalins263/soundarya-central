@@ -108,7 +108,7 @@ export default class ContactUs extends Component{
                         <p><a href="http://school.soundaryainstitutions.in">Soundarya School</a></p>
                         <p><a href="http://puc.soundaryainstitutions.in">Soundarya Composite PU College</a></p>
                         <p><a href="http://sims.soundaryainstitutions.in">Soundarya Institute of Management &amp; Science</a></p>
-                        <p><a href="#">Soundarya Central School (CBSE)</a></p>
+                        <p><a href="/">Soundarya Central School (CBSE)</a></p>
                     </section>   
 
                 </aside>

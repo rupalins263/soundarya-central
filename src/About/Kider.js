@@ -21,36 +21,7 @@ export default class Kider extends Component{
             <div className="row page-row">
                 <article className="welcome col-md-8 col-sm-7">
                     <div className="col-md-12" style={{"padding":"0"}}>
-						<div id="myCarousel" className="carousel slide" data-ride="carousel">
-							<div className="carousel-inner" role="listbox">
-								<div className="item">
-									<img src="https://res.cloudinary.com/dvl9i5pry/image/upload/v1506075029/mont5_gdywn5.jpg" alt=""/>
-								</div>
-								<div className="item active">
-									<img src="https://res.cloudinary.com/dvl9i5pry/image/upload/v1506075059/mont6_i7llsd.jpg" alt=""/>
-								</div>
-								<div className="item">
-									<img src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1506074887/mont3_mnxvzg.jpg" alt=""/>
-								</div>
-								<div className="item">
-									<img src="https://res.cloudinary.com/dvl9i5pry/image/upload/v1506075029/mont5_gdywn5.jpg" alt=""/>
-								</div>
-								<div className="item ">
-									<img src="https://res.cloudinary.com/dvl9i5pry/image/upload/v1506075059/mont6_i7llsd.jpg" alt=""/>
-								</div>
-								<div className="item">
-									<img src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1506074887/mont3_mnxvzg.jpg" alt=""/>
-								</div>
-							</div>
-							<a className="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-								<span className="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-								<span className="sr-only">Previous</span>
-							</a>
-							<a className="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-								<span className="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-								<span className="sr-only">Next</span>
-							</a>
-						</div>
+						<img src="https://res.cloudinary.com/dvl9i5pry/image/upload/v1506075029/mont5_gdywn5.jpg"  style={{width:"100%"}}alt=""/>
 					</div>
 					<div className="col-md-12" style={{"padding":"0"}}>
 						<h3 className="quote" style={{"font-style":"italic","margin": "20px 0 10px"}}><i className="fa fa-quote-left"></i>  The goal of early childhood education should be to activate the child’s natural desire to learn. <i className="fa fa-quote-right"></i></h3>
@@ -68,10 +39,10 @@ export default class Kider extends Component{
                         <h3 className="title">Related Links</h3>
                         <ul className="job-list custom-list-style">
                                 <li><i className="fa fa-caret-right"></i><a href="/About">About Us</a></li>
-                                <li><i className="fa fa-caret-right"></i><a href="/About">Mission</a></li>
-                                <li><i className="fa fa-caret-right"></i><a href="/About">Vision</a></li>
+                                <li><i className="fa fa-caret-right"></i><a href="/About#mission">Mission</a></li>
+                                <li><i className="fa fa-caret-right"></i><a href="/About#vision">Vision</a></li>
                         </ul>
-                    </section>> 
+                    </section>
 
                     <section className="widget">
 						<h3 className="title">Contact</h3>

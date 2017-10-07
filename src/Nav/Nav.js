@@ -16,15 +16,15 @@ class Nav extends Component{
                     <div className="other-branch"><a href="http://sims.soundaryainstitutions.in">SIMS</a></div>
                     <div className="other-branch"><a href="#">|</a></div>
                     <div className="other-branch"><a href="#" style={{"color":"#666"}}>Social Connect</a></div>
-                    <div className="other-branch"><a href="https://www.facebook.com/SoundaryaPuc/" target="_blank"><i className="fa fa-facebook"></i></a></div>
-                    <div className="other-branch"><a href="https://www.facebook.com/SoundaryaPuc/" target="_blank"><i className="fa fa-linkedin"></i></a></div>
-                    <div className="other-branch"><a href="https://www.facebook.com/SoundaryaPuc/" target="_blank"><i className="fa fa-google-plus"></i></a></div>
+                    <div className="other-branch"><a href="https://www.facebook.com/Soundarya-Central-School" target="_blank"><i className="fa fa-facebook"></i></a></div>
+                    <div className="other-branch"><a href="https://www.facebook.com/Soundarya-Central-School" target="_blank"><i className="fa fa-linkedin"></i></a></div>
+                    <div className="other-branch"><a href="https://www.facebook.com/Soundarya-Central-School" target="_blank"><i className="fa fa-google-plus"></i></a></div>
                      
                 </div>      
             </div>
             <div className="header-main container">
                 <h1 className="logo col-md-7 col-sm-6">
-                    <a href="index.html" style={{"text-decoration": "none"}}>
+                    <a href="/" style={{"text-decoration": "none"}}>
                         <img id="logo" src="http://res.cloudinary.com/dzrelou7q/image/upload/v1503155295/Logo_dts0t4.jpg" alt="soundarya-central-Logo"/>
                         <h1 style={{"display":"inline-block","margin-top":"8%","font-size":"30px"}}>Soundarya Central School</h1>
                     </a>
@@ -32,13 +32,13 @@ class Nav extends Component{
                 <div className="info col-md-5 col-sm-6">
                     <ul className="menu-top navbar-right hidden-xs" style={{"display":"none"}}>
                         <li><a href="#">Social Connect :</a></li>
-                        <li><a href="https://www.facebook.com/SoundaryaPuc/" target="_blank"><i className="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i className="fa fa-google-plus"></i></a></li>
+                        <li><a href="https://www.facebook.com/Soundarya-Central-School" target="_blank"><i className="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.facebook.com/Soundarya-Central-School"><i className="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.facebook.com/Soundarya-Central-School"><i className="fa fa-google-plus"></i></a></li>
                     </ul>
                     <div className="contact pull-right">
                         <p className="phone"><i className="fa fa-phone"></i>Call us today 080-28391115</p> <br/>
-                        <p className="email"><i className="fa fa-envelope"></i><a href="#">soundaryacentralschool@gmail.com</a></p>
+                        <p className="email"><i className="fa fa-envelope"></i><a href="mailto:soundaryacentralschool@gmail.com">soundaryacentralschool@gmail.com</a></p>
                     </div>
                 </div>
             </div>
@@ -82,23 +82,29 @@ class Nav extends Component{
                          <li className="nav-item dropdown" id="academics">
                             <a className="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Academics <i className="fa fa-angle-down"></i></a>
                             <ul className="dropdown-menu">
-                           <li className="nav-item"><a href="/PrePrimary">Pre Primary</a></li>
+
     
                                         
-        
-        <li className="nav-item"><a href="/Primary">Primary</a></li>
-    
+        <li className="menu-item dropdown dropdown-Ssubmenu">
+           
+             <a className="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Scholastic</a>
+              <ul className="dropdown-menu">
+                 <li className="nav-item"><a href="/PrePrimary">Pre Primary</a></li>
+                <li className="nav-item"><a href="/Primary">Primary</a></li>
+            
+                                                
+                
+                <li className="nav-item"><a href="/MiddleSchool">Middle School</a></li>
                                         
-        
-        <li className="nav-item"><a href="/MiddleSchool">Middle School</a></li>
-                                
-                                
-        
-        <li className="nav-item"><a href="/CoScholastic">Co Scholastic</a></li>
-    
+                                        
+                
+     
+                </ul>
+         </li>
                                 
         
         <li className="nav-item"><a href="/Extended">Extended Learning</a></li>
+                   <li className="nav-item"><a href="/CoScholastic">Co Scholastic</a></li>
     
 
                             </ul>
@@ -143,12 +149,17 @@ class Nav extends Component{
     
                             </ul>
                          </li> 
-                         <li className="nav-item dropdown" id="celebrations">
+                                                                                                                  
+                        
+        
+        
+
+                             <li className="nav-item dropdown" id="facilitators">
                             <a className="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Events <i className="fa fa-angle-down"></i></a>
                             <ul className="dropdown-menu">
                                 
         
-        <li className="nav-item"><a href="/Celebrations">Celebrations</a></li>
+       <li className="nav-item"><a href="/Celebrations">Celebrations</a></li>
     
 								
         
@@ -159,13 +170,12 @@ class Nav extends Component{
         <li className="nav-item"><a href="/Video">Videos</a></li>
     
                             </ul>
-                         </li>                                                                                              
+                         </li> 
+
+                         
+                         
                         
-        
         <li className="nav-item"><a href="/Gallery">Gallery</a></li>
-    
-                        
-        
         <li className="nav-item"><a href="/Downloads">Downloads</a></li>
     
                         

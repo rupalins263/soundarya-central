@@ -49,8 +49,9 @@ export default class About extends Component{
                         <h3 className="title">Related Links</h3>
                         <ul className="job-list custom-list-style">
                                 <li><i className="fa fa-caret-right"></i><a href="/About">About Us</a></li>
-                                <li><i className="fa fa-caret-right"></i><a href="/About">Mission</a></li>
-                                <li><i className="fa fa-caret-right"></i><a href="/About">Vision</a></li>
+                                 <li><i className="fa fa-caret-right"></i><a href="/About#Management">Management</a></li>
+                                <li><i className="fa fa-caret-right"></i><a href="/About#mission">Mission</a></li>
+                                <li><i className="fa fa-caret-right"></i><a href="/About#vision">Vision</a></li>
                         </ul>
                     </section>
                     <section className="widget">
@@ -60,7 +61,7 @@ export default class About extends Component{
     <p className="email"><i className="fa fa-envelope"></i> <a href="#">soundaryacentralschool@gmail.com</a></p>
 </section>
                 </aside>
-                <div className="col-md-12">
+                <div className="col-md-12" id="Management">
                     <div className="col-md-6">
                         <h3 className="title" style={{"margin-top": "30px"}} id="chairmans-message">Chairman's Message</h3>
                         <div className="col-md-12" style={{"background":"#FCFCFC","padding":"10px 10px","margin-top":"20px"}}>
