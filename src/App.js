@@ -12,7 +12,7 @@ import Media from './Contact/Media';
 import Admission from './Academics/Admissions';
 import Mission from './About/Mission';
 import InfraStructure from './Academics/InfraStructure';
-
+import NewsSingle from './Contact/NewsSingle';
 import About from './About/About';
 import Primary from './About/Primary';
 import PrePrimary from './About/PrePrimary';
@@ -63,7 +63,7 @@ class App extends Component {
                           <Route exact path="/Privacy" component={Privacy}/>
                               <Route exact path="/Facilitator" component={Facilitaor}/>
                                   <Route exact path="/Gallery" component={Gallery}/>
-                            
+                              <Route  path="/NewsSingle" component={NewsSingle}/>
                           <Route exact path="/Faculty" component={Faculty}/>
        </Switch>
        <Footer/>
