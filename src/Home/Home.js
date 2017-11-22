@@ -14,11 +14,20 @@ export  default class Home extends Component{
     componentWillMount(){
          axios.get(`http://198.12.154.44:3333/Central/Image/1`)
              .then((res)=>{
-                    console.log(res)
+                let filter= res.data.response.sort((a,b)=>{
+						if(a.imageid>b.imageid)
+						{
+							return -1;
+						}
+						else{
+							return 1;
+						}
+				  })
                     this.setState({
-                        corosel:res.data.response,
+                        corosel:filter,
                        
                     })
+               
              })
          
              
@@ -36,7 +45,7 @@ export  default class Home extends Component{
                           {
                               return(
                                        <div className="item active">
-                                                <img src={item.image_url} alt="Los Angeles" style={{width:"100%",height:500}}/>
+                                                <img src={item.image_url} alt="Los Angeles" style={{width:"100%",height:450}}/>
                                             </div>  
                               )
                           }

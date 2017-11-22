@@ -1,7 +1,19 @@
 import React,{Component} from 'react';
 import './Contact.css';
+import logo from '../close.png'
 import axios from 'axios';
+
 export default class ContactUs extends Component{
+
+        constructor(){
+            super();
+            this._changeToNormal=this._changeToNormal.bind(this);
+            this.state={
+                display:"none",
+                res:false,
+                connecting:false
+            }
+        }
 
         submit(event)
     {
@@ -9,8 +21,12 @@ export default class ContactUs extends Component{
        var name= document.getElementById("name");
         var phone= document.getElementById("phone");
          var email= document.getElementById("email");
-
+         var _that=this;
          var message= document.getElementById("message");
+         this.setState({
+             connecting:true,
+             display:"block"
+         })
           axios.post('http://198.12.154.44:3333/Central/ContactUs', {
                 "name":name.value,
                 "email":email.value,
@@ -18,18 +34,69 @@ export default class ContactUs extends Component{
                 "message":message.value
             })
                 .then(function (response) {
-                    alert("Successfully submitted")
-                    window.location=window.location
+                    
+                    _that.setState({
+                        res:true,
+                        display:"block",
+                        connecting:false
+                    })
+                  
                 })
                 .catch(function (error) {
-                   alert("Retry again")
+                      _that.setState({
+                        res:false,
+                        display:"block",
+                        connecting:false
+                    })
                 });
            
     }
+    _changeToNormal(){
+        this.setState({
+            display:"none",
+            connecting:false
+        })
+        document.getElementById("myForm").reset();
+    }
     render()
     {
+        let conectionCompo="";
+         let val="";
+        if(this.state.connecting)
+        {
+            conectionCompo=<div style={{background:"white",margin:"0 auto",textAlign:"center",height:400,width:400,cursor:"pointer"}}><div style={{width:"100%",height:"50%",backgroundColor:"#33b7a0"}}><p style={{padding:50,fontFamily:'serif',fontSize:25,fontWeight:900,color:"white"}}><img src={logo}/></p></div><div><p style={{padding:50,fontFamily:'serif',fontSize:25,fontWeight:900}}> Sending Message <br/>Please wait</p></div></div>;
+        }
+        else{
+      
+                if(this.state.res)
+                {
+                    val=<div style={{background:"white",margin:"0 auto",textAlign:"center",height:400,width:400,cursor:"pointer"}}><div style={{width:"100%",height:"50%",backgroundColor:"#33b7a0"}}><p style={{padding:50,fontFamily:'serif',fontSize:25,fontWeight:900,color:"white"}}><img src={logo}/></p></div><div><p style={{padding:50,fontFamily:'serif',fontSize:25,fontWeight:900}}>Thanks!<br/>
+                        We appreciate that you’ve taken the time to write us. We’ll get back to you very soon</p></div></div>;
+                }
+                else{
+                val= <div style={{background:"white",margin:"0 auto",textAlign:"center",height:400,width:400,cursor:"pointer"}}><div style={{width:"100%",height:"50%",backgroundColor:"#33b7a0"}}><p style={{padding:50,fontFamily:'serif',fontSize:25,fontWeight:900,color:"white"}}><img src={logo}/></p></div><div><p style={{padding:50,fontFamily:'serif',fontSize:25,fontWeight:900}}>Oh Snap <br/>Please Try Submitting Again</p></div></div>;
+            }
+        }
+                 
         return(
+
        <div className="content container">
+          <div onClick={this._changeToNormal} style={{"background-color":"rgba(24, 24, 24, 0.72)",
+                        width:"100%",
+                        height: "100%",
+                        position: "fixed",
+                        zIndex: 23,
+                        left: 0,
+                        top: 0,
+                        display:this.state.display}}>
+                     <p style={{textAlign:"center",marginTop:100}}> 
+                        {val}
+                        {conectionCompo}
+                     </p>
+                  
+                    
+                 
+        </div>
     <div className="page-wrapper">
         <header className="page-heading clearfix">
             <h1 className="heading-title pull-left">Contact</h1>
@@ -41,14 +108,15 @@ export default class ContactUs extends Component{
                 </ul>
             </div>
         </header> 
+      
         <div className="page-content">
             <div className="row">
                 <article className="contact-form col-md-8 col-sm-7  page-row">                            
-                    <h3 className="title">Get in touch</h3>
+                    <h3 className="title">Get in touch</h3>"
                     
                     <p>We’d love to hear from you. Please fill in the form below and we will get in touch with you at the earliest.</p>
                     
-                    <form onSubmit={this.submit.bind(this)}>
+                    <form onSubmit={this.submit.bind(this)} id="myForm">
                         <div className="form-group name">
                             <label for="name">Name<span className="required">*</span></label>
                             <input id="name" type="text" className="form-control req_field" placeholder="Enter your name" required/>
@@ -83,7 +151,7 @@ export default class ContactUs extends Component{
 <h3 className="title">Downloads</h3>
 <p>For your benefit we have compiled in this section some of the key features you should know about Soundarya Central School.</p>
 <p><a className="btn btn-theme" href="https://res.cloudinary.com/dvl9i5pry/image/upload/v1506081340/Soundarya-CBSE-Prospectus_qshta2.pdf"><i className="fa fa-download"></i>Download Prospectus</a></p>
-<p><a className="btn btn-theme" href="#"><i className="fa fa-download"></i>Download Application Form</a></p>
+
 </section>
                     <section className="widget has-divider">
                         <h3 className="title">Postal Address</h3>
