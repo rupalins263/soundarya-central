@@ -9,8 +9,8 @@ class Nav extends Component{
             <div className="top-bar">
                 <div className="container" style={{"text-align":"right"}}>              
                     <div className="pull-left other-branch"><p>Affiliation No : 830587</p></div>
-                    <div className="other-branch"><a href="/PrePrimary">MONTESSORI</a></div>
-                    <div className="other-branch"><a href="/Kider">KINDERGARTEN</a></div>
+                    {/*<div className="other-branch"><a href="/PrePrimary">MONTESSORI</a></div>
+                    <div className="other-branch"><a href="/Kider">KINDERGARTEN</a></div>*/}
                     <div className="other-branch"><a href="http://school.soundaryainstitutions.in">SOUNDARYA SCHOOL</a></div>     
                     <div className="other-branch"><a href="http://puc.soundaryainstitutions.in">SOUNDARYA PU COLLEGE</a></div>
                     <div className="other-branch"><a href="http://sims.soundaryainstitutions.in">SIMS</a></div>
@@ -89,7 +89,15 @@ class Nav extends Component{
            
              <a className="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Scholastic</a>
               <ul className="dropdown-menu">
-                 <li className="nav-item"><a href="/PrePrimary">Pre Primary</a></li>
+                    <li className="menu-item dropdown dropdown-Ssubmenu">
+           
+                            <a className="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Pre Primary</a>
+                            <ul className="dropdown-menu">
+                                <li className="nav-item"><a href="/PrePrimary">Montessori</a></li>
+                                <li className="nav-item"><a href="/Kider">Kindergarten</a></li>
+
+                             </ul>
+                        </li>
                 <li className="nav-item"><a href="/Primary">Primary</a></li>
             
                                                 
@@ -141,12 +149,12 @@ class Nav extends Component{
                             <ul className="dropdown-menu">
                                 
         
-        <li className="nav-item"><a href="/Facilitator">Facilitators</a></li>
-    
-                                
-        
-        <li className="nav-item"><a href="/Interaction">Interaction Training</a></li>
-    
+                                        <li className="nav-item"><a href="/Facilitator">Facilitators</a></li>
+                                    
+                                                                
+                                        
+                                        <li className="nav-item"><a href="/Interaction">Interaction Training</a></li>
+                                    
                             </ul>
                          </li> 
                                                                                                                   
@@ -159,7 +167,7 @@ class Nav extends Component{
                             <ul className="dropdown-menu">
                                 
         
-       <li className="nav-item"><a href="/Celebrations">Celebrations</a></li>
+       {/*<li className="nav-item"><a href="/Celebrations">Celebrations</a></li>*/}
     
 								
         
@@ -167,7 +175,7 @@ class Nav extends Component{
     
 								
         
-        <li className="nav-item"><a href="/Video">Videos</a></li>
+        {/*<li className="nav-item"><a href="/Video">Videos</a></li>*/}
     
                             </ul>
                          </li> 
@@ -175,7 +183,20 @@ class Nav extends Component{
                          
                          
                         
-        <li className="nav-item"><a href="/Gallery">Gallery</a></li>
+        {/*<li className="nav-item"><a href="/Gallery">Gallery</a></li>*/}
+                <li className="nav-item dropdown" id="facilitators">
+                            <a className="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Gallery <i className="fa fa-angle-down"></i></a>
+                            <ul className="dropdown-menu">
+                                
+        
+                                        <li className="nav-item"><a href="/Gallery">Photos</a></li>
+                                    
+                                                                
+                                        
+                                        <li className="nav-item"><a href="/Video">Videos</a></li>
+                                    
+                            </ul>
+                         </li> 
         <li className="nav-item"><a href="/Downloads">Downloads</a></li>
     
                         

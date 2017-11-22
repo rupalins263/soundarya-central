@@ -18,20 +18,44 @@ export default class Interaction extends Component{
         </header> 
         <div className="page-content">
             <div className="row page-row">
-                <article className="welcome col-md-8 col-sm-7">                         
+
+                    <div className="welcome col-md-12 col-sm-12" style={{marginBottom:50}}>
+                            <article className="welcome col-md-6 col-sm-12" style={{marginTop:30}}>                         
+                                                
+                            
+                            <h2 className="title" >Parent – Teacher Meeting</h2>
+                        <blockquote className="custom-quote">
+                                <p>We have always believed interaction with parents regularly helps to encourage and accelerate the child’s progress in our school system. We work in tendon with parents so that there is proper co-ordination between the teachers and the parents. In view of this parent-teacher meetings are held in a month. Parents have the unique opportunity to discuss personally the progress of children.</p>
+                            </blockquote>
+                            </article>
+                            <article className="welcome col-md-6 col-sm-12" style={{"text-align": "center"}}>                         
+                                <img src="https://res.cloudinary.com/dvl9i5pry/image/upload/v1511348415/Parent_Teacher_meeting_1_axy6yk.jpg"  style={{width:"70%",height:200,marginTop:40}}    />           
+                                <img src="https://res.cloudinary.com/dvl9i5pry/image/upload/v1511349964/Parent_Teacher_meeting_2_bepfv3.jpg"  style={{width:"70%",height:200,marginTop:40}}    />           
+                        
+                        </article>
+                   </div>
+                    <div className="welcome col-md-12 col-sm-12" style={{marginBottom:50}}>
+                            <article className="welcome col-md-6 col-sm-12">                         
+                                   
+                            <h2 className="title" style={{"margin-top": "30px"}}>Teacher’s Workshop</h2>
+                        <blockquote className="custom-quote">
+                                <b>“ A society is known by the way it takes care of its teachers.”</b>
+                                <p>Not only do teachers produce responsible citizens of tomorrow, but they also weave the moral fabric our children will be enveloped in for life.</p>
+                                <p>The in -service training helps the teachers to make their class room teaching interesting and also helps to keep themselves abreast of the latest changes in the curriculum. The professional development programmes have enabled them to elevate the children to a higher plane of learning and critical thinking.</p>
+                                <p>The school is committed to increasing its teacher development programme, both academic and Non-academic. Orientation workshops by CBSE empanelled agencies are regular features.</p>
+                            </blockquote>
+                        </article>
+                            <article className="welcome col-md-6 col-sm-12" style={{"text-align": "center"}}>
+                                               
+                                <img src="https://res.cloudinary.com/dvl9i5pry/image/upload/v1511350213/Teacher_traning_program_1_bfttou.jpg"  style={{width:"70%",height:200,marginTop:40}}    />           
+                                  <img src="https://res.cloudinary.com/dvl9i5pry/image/upload/v1511350223/Teacher_traning_program_2_hgkcn1.jpg"  style={{width:"70%",height:200,marginTop:40}}    />           
+                             
+                           </article>
+                   </div>
+                  
+                   <div className="welcome col-md-12 col-sm-12" style={{marginBottom:50}}>
+                    <article className="welcome col-md-12 col-sm-12">                         
                                          
-                    
-                    <h3 className="title" style={{"margin-top": "30px"}}>Parent – Teacher Meeting</h3>
-                   <blockquote className="custom-quote">
-                        <p>We have always believed interaction with parents regularly helps to encourage and accelerate the child’s progress in our school system. We work in tendon with parents so that there is proper co-ordination between the teachers and the parents. In view of this parent-teacher meetings are held in a month. Parents have the unique opportunity to discuss personally the progress of children.</p>
-                    </blockquote>
-                    <h3 className="title" style={{"margin-top": "30px"}}>Teacher’s Workshop</h3>
-                   <blockquote className="custom-quote">
-                        <b>“ A society is known by the way it takes care of its teachers.”</b>
-                        <p>Not only do teachers produce responsible citizens of tomorrow, but they also weave the moral fabric our children will be enveloped in for life.</p>
-                        <p>The in -service training helps the teachers to make their class room teaching interesting and also helps to keep themselves abreast of the latest changes in the curriculum. The professional development programmes have enabled them to elevate the children to a higher plane of learning and critical thinking.</p>
-                        <p>The school is committed to increasing its teacher development programme, both academic and Non-academic. Orientation workshops by CBSE empanelled agencies are regular features.</p>
-                    </blockquote>
                     <h3 className="title" style={{"margin-top": "30px"}}>Orientation Programme</h3>
                    <blockquote className="custom-quote">
                         <ul className="list-roman">
@@ -55,9 +79,17 @@ export default class Interaction extends Component{
                         </ul>
                         <p>The session was an eye-opener for teachers .The management is looking forward to organize more sessions for teacher’s empowerment and implementing CCE in its true spirit for the overall development of children.</p>
                     </blockquote>
+                     </article>
+                    </div>
+                    <section className="widget" style={{marginTop:30,paddingLeft:80}}>
+                        <h3 className="title">Contact</h3>
+                        <p><b>Soundarya Central School</b><br/>Soundaryanagar, Sidedahalli,<br/> Nagasandra Post, Bangalore-560073</p>
+                        <p className="tel"><i className="fa fa-phone"></i> 080-28391115 / +91 9740420115</p>
+                        <p className="email"><i className="fa fa-envelope"></i> <a href="mailto:soundaryacentralschool@gmail.com">soundaryacentralschool@gmail.com</a></p>
+                    </section>
                    
-                </article>
-                <aside className="page-sidebar  col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1">                    
+               
+                {/*<aside className="page-sidebar  col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1">                    
                     <section className="widget has-divider">
                         <h3 className="title">Related Links</h3>
                         <ul className="job-list custom-list-style">
@@ -73,7 +105,7 @@ export default class Interaction extends Component{
                         <p className="tel"><i className="fa fa-phone"></i> 080-28391115 / +91 9740420115</p>
                         <p className="email"><i className="fa fa-envelope"></i> <a href="#">soundaryacentralschool@gmail.com</a></p>
                     </section>
-                </aside>
+                </aside>*/}
             </div>
         </div>
     </div>

@@ -21,21 +21,35 @@ export default class Video extends Component{
         <div className="page-content">     
 			<div className="row page-row">
 				<div className="col-md-4 col-sm-6 col-xs-12">
-					<iframe width="100%" height="315" src="https://www.youtube.com/embed/ImVRbtPLvTw?rel=0" frameborder="0" allowfullscreen=""></iframe>
+					<iframe width="100%" height="315" src="https://www.youtube.com/embed/BQMYd0dIqhU" frameBorder="0" allowFullScreen=""></iframe>
 				</div>
 				<div className="col-md-4 col-sm-6 col-xs-12">
-					<iframe width="100%" height="315" src="https://www.youtube.com/embed/pFEFJnKnU9A?rel=0" frameborder="0" allowfullscreen=""></iframe>
+					<iframe width="100%" height="315" src="https://www.youtube.com/embed/qC3kDXEVpIY&amp;t=4s" frameBorder="0" allowFullScreen=""></iframe>
 				</div>
 				<div className="col-md-4 col-sm-6 col-xs-12">
-					<iframe width="100%" height="315" src="https://www.youtube.com/embed/oJBQiJwpBqQ?rel=0" frameborder="0" allowfullscreen=""></iframe>
+					<iframe width="100%" height="315" src="https://www.youtube.com/embed/sMkE1dKPVh8" frameBorder="0" allowFullScreen=""></iframe>
 				</div>
 			</div>
 			<div className="row page-row">
 				<div className="col-md-4 col-sm-6 col-xs-12">
-					<iframe width="100%" height="315" src="https://www.youtube.com/embed/F1XtkOpu1bM?rel=0" frameborder="0" allowfullscreen=""></iframe>
+					<iframe width="100%" height="315" src="https://www.youtube.com/embed/9j_eE7UtbKg" frameBorder="0" allowFullScreen=""></iframe>
 				</div>
 				<div className="col-md-4 col-sm-6 col-xs-12">
-					<iframe width="100%" height="315" src="https://www.youtube.com/embed/F23Fo1bR34o?rel=0" frameborder="0" allowfullscreen=""></iframe>
+					<iframe width="100%" height="315" src="https://www.youtube.com/embed/Shk26wd8oxY" frameBorder="0" allowFullScreen=""></iframe>
+				</div>
+				<div className="col-md-4 col-sm-6 col-xs-12">
+					<iframe width="100%" height="315" src="https://www.youtube.com/embed/X8oZm0UVwJM&amp;t=10s" frameBorder="0" allowFullScreen=""></iframe>
+				</div>
+			</div>
+				<div className="row page-row">
+				<div className="col-md-4 col-sm-6 col-xs-12">
+					<iframe width="100%" height="315" src="https://www.youtube.com/embed/hAccPOpsb_s" frameBorder="0" allowFullScreen=""></iframe>
+				</div>
+				<div className="col-md-4 col-sm-6 col-xs-12">
+					<iframe width="100%" height="315" src="https://www.youtube.com/embed/VPWNHTWFWTY" frameBorder="0" allowFullScreen=""></iframe>
+				</div>
+				<div className="col-md-4 col-sm-6 col-xs-12">
+					<iframe width="100%" height="315" src="https://www.youtube.com/embed/F1XtkOpu1bM" frameBorder="0" allowFullScreen=""></iframe>
 				</div>
 			</div>
 		</div>

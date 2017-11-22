@@ -19,20 +19,29 @@ export default class InfraStructure extends Component{
         <div className="page-content">
             <div className="row page-row">
                 <article className="welcome col-md-8 col-sm-7">                                                    
-                    <p><img className="img-responsive" src="https://res.cloudinary.com/dvl9i5pry/image/upload/v1506077307/infra_lclqd6.jpg" alt=""/></p>   
+                    <p><img className="img-responsive" src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511350904/Building_Photo_l0fpqz.jpg" alt=""/></p>   
                     <p>Soundarya Central school offers state–of–the art facilities for all academic, sporting, co-scholastic and personal development programme that offers students tremendous opportunity to grow in knowledge, self confidence and skill.</p>                         
                     <h2 className="title sub-heading">Interactive Class room </h2>
+                     <p><img className="img-responsive" src="https://res.cloudinary.com/dvl9i5pry/image/upload/v1511351078/Interactive_classroom_zpdgl0.jpg" alt=""/></p>   
                     <p style={{"text-align":"justify"}}>The class rooms are digitally equipped, Spacious well ventilated provides right atmosphere for learning. Interactive Classrooms, a revolutionary new offering facilitates the integration of technology into the teaching-learning process.Digital learning makes the end to end process of teaching and learning more engaging and easy. Rich multimedia based, pedagogically appropriate content mapped to school curriculum makes learning interesting. It equips us to offer technology enabled teaching-learning that effectively disseminates knowledge in a manner that is easier and far more interesting to comprehend than those adopted by conventional instructional methodologies. </p>   
                     <p>Interactive Classrooms has been specifically designed to facilitate the implementation of NCF guidelines. It is an innovatively designed teaching-learning solution that empowers all stake-holders thereby making teaching &amp; learning a more rewarding and fulfilling experience. These adds to the ambience of the classroom.</p>                        
                     
                     <h2 className="title sub-heading">Computer Lab</h2>
+                     <p><img className="img-responsive" src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511351101/Computer_lab_ich24k.jpg" alt=""/></p>   
+                
                     <p style={{"text-align":"justify"}}>Computer education is an integral part of the curriculum.School offers computer Education to all students from Grade 1</p>             
                     <p>Our Computer Lab. provides Hi-Tech IT facilities to students .The Lab.Is designed for computer aided learning equipped with LCD projector and Over-Head-Projector. Students can surf internet to find materials related to various subjects. . Internet access is monitored and supervised by computer teachers.</p>   
                     <h2 className="title sub-heading">Science Lab</h2>
+                      <p><img className="img-responsive" src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511351119/Science_Lab_hfhirt.jpg" alt=""/></p>   
+                
                     <p style={{"text-align":"justify"}}>Science Lab provides an atmosphere of experiencing and learning science. The thirst for experimental observation and study is quenched in our labs. Fully equipped lab allows the students a hands-on –experience on all concepts of science.</p>           
                     <h2 className="title sub-heading">Math Lab</h2>
+                     <p><img className="img-responsive" src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511351155/Math_laboratories_fgylot.jpg" alt=""/></p>   
+                
                     <p style={{"text-align":"justify"}}>Math Lab is one of the latest innovative teaching tool . These labs are aimed at enabling school students to learn and explore mathematical concepts and verify mathematical facts and theorems using technology tools. It provides an opportunity to students to understand, internalize, discover and verify the basic mathematical and geometrical concepts through concrete objects and situations, thus building interest and confidence in students learning the subject. The laboratory also allows and encourages the students to think, discuss amongst themselves as well as with the teacher, and assimilate concepts.</p>  
                     <h2 className="title sub-heading">Library</h2>
+                     <p><img className="img-responsive" src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511351160/Library_cjueac.jpg" alt=""/></p>   
+                
                     <p style={{"text-align":"justify"}}>We aim to promote the enjoyment of reading and to provide curriculum support. The school has well stocked,spacious well ventilated library which houses books on varied subjects. The collection of over 1500 volumes is mainly comprised of textbooks,reference books, fiction titles,periodicals and audio visual materials like CDs and DVDs.</p>
                     <b>Library Rules:</b>
                     <ul className="icons-list star">
@@ -48,11 +57,17 @@ export default class InfraStructure extends Component{
                         
                     </ul>
                     <h2 className="title sub-heading">Ocarina - Seminar hall</h2>
+                    
+                      <p><img className="img-responsive" src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511351155/seminar_hall_ui81yh.jpg" alt=""/></p>   
+                
                     <p style={{"text-align":"justify"}}>It’s a dream come true, feather in the cap of our Institution. . It's a communication platform. It's a showcase of talent.All kinds of possibilities for creative learning open up when you take a look at this spectacular, futuristic auditorium, which was inaugurated on the 5th September 2014. Auditorium combines the gracious elegance and enduring quality , with a spectacular, futuristic design.</p> 
                     <p style={{"text-align":"justify"}}>Fully air-conditioned with a seating capacity of 300 people. It has amazing infrastructure, back-up power, superior acoustics and the latest technology for sound and light effects, required to conduct any kind of performance - dance, music or theatre. The new auditorium brings a rich new perspective to the exciting, expanding, evolving world of education.</p>
                     <p style={{"text-align":"justify"}}>At Soundarya, we're preparing our students for the stage of life. Making learning an enriching experience.</p>
                     
                     <h2 className="title sub-heading">Play Ground</h2>
+                    
+                     <p><img className="img-responsive" src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511351789/Play_Ground_nomnpd.jpg" alt=""/></p>   
+                
                     <p style={{"text-align":"justify"}}>Sports and Games play an important role in the growth of children .It forms an integral part of the school curriculum for which a wide range of facilities are available. Students are encouraged to participate in various games. The school has developed infrastructure that allow students to play a wick variety of sports from team games to individual sports.</p>
                     <b>“You can discover more about a person in an hour of play than in a year of conversation.” -Plato</b>
                     <b>“Play is the only way the highest intelligence of humankind can unfold.” - Joseph Chilton Pearce</b> 

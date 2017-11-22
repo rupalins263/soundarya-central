@@ -54,17 +54,17 @@ export default class Gallery extends Component{
                                 <div className="album-cover">
                            
                                         
-                                        <img className="img-responsive" src={item.album_url} alt=""/>
+                                        <img className="img-responsive" style={{height:200,width:"100%"}} src={item.album_url} alt=""/>
                                     
                                     <div className="desc">
                                         <h4><small>{item.albumname}</small></h4>
-                                        <p>{item.album_description} </p>
+                                        {/*<div>{item.album_description} </div>*/}
                                     </div>
                                 </div>
                          </div>
                 )
                
-            })
+            }).reverse();
              val=(<div id="album">{aval}</div>)
          }
        } 

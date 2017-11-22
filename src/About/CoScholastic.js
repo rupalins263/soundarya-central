@@ -19,9 +19,38 @@ export default class CoScholastic extends Component{
         </header> 
         <div className="page-content">
             <div className="row page-row">
-                <article className="welcome col-md-8 col-sm-7">                         
-                     <p><img className="img-responsive" src="https://res.cloudinary.com/dvl9i5pry/image/upload/v1506075405/co-curricular_iltvoz.jpg" alt=""/></p>
-                     <p>Pedagogy in the classroom is not a staid and insipid event in Soundarya Central School due to innovative activities which alive the process of learning. Success in school as in life depends on multiplicity of factors- social and emotional intelligence, self understanding, self control, assertiveness, decision making, empathy, and connection to community. Overall activities are carefully designed to bring out the innate potential of every individual student.
+                <article className="welcome col-md-8 col-sm-7">   
+                         <div id="myCarousel" className="carousel slide" data-ride="carousel">
+            <ol className="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" className=""></li>
+                <li data-target="#myCarousel" data-slide-to="1" className="active"></li>
+                <li data-target="#myCarousel" data-slide-to="2" className=""></li>
+                <li data-target="#myCarousel" data-slide-to="3" className=""></li>
+                <li data-target="#myCarousel" data-slide-to="4" className=""></li>
+                <li data-target="#myCarousel" data-slide-to="5" className=""></li>
+                <li data-target="#myCarousel" data-slide-to="6" className=""></li>
+               
+                </ol><div className="carousel-inner">
+                         <div className="item  active"><img src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511359967/next_to_15_o6vqgj_fail6m.jpg" alt=""/></div>
+                            <div className="item "><img src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511359965/Horse_riding_qlpthk.jpg" alt=""/></div>
+                
+                            <div className="item"><img src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511359964/DSC07159_bmosmq.jpg" alt=""/></div>
+                
+                            <div className="item  "><img src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511359964/DSC07133_wfb3ql.jpg" alt=""/></div>
+                            <div className="item "><img src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511359964/DSC07097_xxkztc.jpg" alt=""/></div>
+                            <div className="item"><img src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511359964/Creative_Art_rbufo1.jpg" alt=""/></div>
+                            <div className="item"><img src=" http://res.cloudinary.com/dvl9i5pry/image/upload/v1511359964/9L2A7795_jqvbtp.jpg" alt=""/></div>
+                           
+                             </div>
+                    <a className="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span className="glyphicon glyphicon-chevron-left"></span>
+                        <span className="sr-only">Previous</span></a>
+                        <a className="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span className="glyphicon glyphicon-chevron-right"></span>
+                            <span className="sr-only">Next</span></a>
+                            </div>   
+
+                        <p>Pedagogy in the classroom is not a staid and insipid event in Soundarya Central School due to innovative activities which alive the process of learning. Success in school as in life depends on multiplicity of factors- social and emotional intelligence, self understanding, self control, assertiveness, decision making, empathy, and connection to community. Overall activities are carefully designed to bring out the innate potential of every individual student.
                     </p>
                     
                     <h3 className="title" style={{"margin-top":"30px"}}>Creative Art:</h3>
