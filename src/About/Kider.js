@@ -21,9 +21,36 @@ export default class Kider extends Component{
             <div className="row page-row">
                 <article className="welcome col-md-8 col-sm-7">
                     <div className="col-md-12" style={{"padding":"0"}}>
-						<img src="https://res.cloudinary.com/dvl9i5pry/image/upload/v1506075029/mont5_gdywn5.jpg"  style={{width:"100%"}}alt=""/>
+                            <div id="myCarousel" className="carousel slide" data-ride="carousel">
+            <ol className="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" className=""></li>
+                <li data-target="#myCarousel" data-slide-to="1" className="active"></li>
+                <li data-target="#myCarousel" data-slide-to="2" className=""></li>
+                <li data-target="#myCarousel" data-slide-to="3" className=""></li>
+                <li data-target="#myCarousel" data-slide-to="4" className=""></li>
+                {/*<li data-target="#myCarousel" data-slide-to="5" className=""></li>
+                <li data-target="#myCarousel" data-slide-to="6" className=""></li>
+                <li data-target="#myCarousel" data-slide-to="7" className=""></li>
+                <li data-target="#myCarousel" data-slide-to="8" className=""></li>*/}
+                </ol><div className="carousel-inner">
+                         <div className="item  active"><img src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511358048/DSC05894_zidqqd.jpg" alt=""/></div>
+                    <div className="item "><img src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511358048/DSC05886_gptbaz.jpg" alt=""/></div>
+         
+                     <div className="item"><img src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511358049/9L2A5399_vosxjx.jpg" alt=""/></div>
+          
+                    <div className="item  "><img src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511358049/9L2A5355_iw0ia0.jpg" alt=""/></div>
+                    <div className="item "><img src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511358071/9L2A5027_uegg6c.jpg" alt=""/></div>
+                    </div>
+                    <a className="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span className="glyphicon glyphicon-chevron-left"></span>
+                        <span className="sr-only">Previous</span></a>
+                        <a className="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span className="glyphicon glyphicon-chevron-right"></span>
+                            <span className="sr-only">Next</span></a>
+                            </div>           
 					</div>
 					<div className="col-md-12" style={{"padding":"0"}}>
+
 						<h3 className="quote" style={{"font-style":"italic","margin": "20px 0 10px"}}><i className="fa fa-quote-left"></i>  The goal of early childhood education should be to activate the child’s natural desire to learn. <i className="fa fa-quote-right"></i></h3>
 						<h3 className="title text-right">– Dr. Maria Montessori</h3>
 						<blockquote className="custom-quote">

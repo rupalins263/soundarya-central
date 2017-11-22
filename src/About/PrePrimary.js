@@ -21,7 +21,33 @@ export default class Primary extends Component{
             <div className="row page-row">
                 <article className="welcome col-md-8 col-sm-7">
                     <div className="col-md-12" style={{"padding":"0"}}>
-						<img src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1507365248/montessori_zoiakm.jpg" style={{"width":"100%"}}/>
+
+						<div id="myCarousel" className="carousel slide" data-ride="carousel">
+								<ol className="carousel-indicators">
+									<li data-target="#myCarousel" data-slide-to="0" className=""></li>
+									<li data-target="#myCarousel" data-slide-to="1" className="active"></li>
+									<li data-target="#myCarousel" data-slide-to="2" className=""></li>
+									<li data-target="#myCarousel" data-slide-to="3" className=""></li>
+									{/*<li data-target="#myCarousel" data-slide-to="4" className=""></li>
+									<li data-target="#myCarousel" data-slide-to="5" className=""></li>
+									<li data-target="#myCarousel" data-slide-to="6" className=""></li>
+									<li data-target="#myCarousel" data-slide-to="7" className=""></li>
+									<li data-target="#myCarousel" data-slide-to="8" className=""></li>*/}
+									</ol><div className="carousel-inner">
+											<div className="item  active"><img src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511356358/9L2A4979_evqwvo.jpg" alt=""/></div>
+										<div className="item "><img src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511356359/9L2A5163_coslou.jpg" alt=""/></div>
+							
+										<div className="item"><img src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511356358/9L2A5158_czo2ux.jpg" alt=""/></div>
+							
+										<div className="item  "><img src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511356360/9L2A5198_pysnaz.jpg" alt=""/></div>
+									</div>
+										<a className="left carousel-control" href="#myCarousel" data-slide="prev">
+											<span className="glyphicon glyphicon-chevron-left"></span>
+											<span className="sr-only">Previous</span></a>
+											<a className="right carousel-control" href="#myCarousel" data-slide="next">
+												<span className="glyphicon glyphicon-chevron-right"></span>
+												<span className="sr-only">Next</span></a>
+												</div>           	
 					</div>
 					<div className="col-md-12" style={{"padding":"0"}}>
 						<h3 className="quote" style={{"font-style":"italic","margin": "20px 0 10px"}}><i className="fa fa-quote-left"></i>  The goal of early childhood education should be to activate the child’s natural desire to learn. <i className="fa fa-quote-right"></i></h3>
@@ -32,20 +58,24 @@ export default class Primary extends Component{
 							<p>Children in the age group of 2-1/2 to 6 learn through sensory-motor activities, working with materials that help them develop cognitive powers through experience of seeing, touching, hearing, smelling, tasting and movement.</p>
 							<p>The various groups of activities are:</p>
 						</blockquote>
-						<h3 className="title" style={{"margin-top": "30px"}}> <strong>Exercise of practical life:</strong></h3>
+						<h2 className="title" style={{"margin-top": "30px"}}> <strong>Exercise of practical life:</strong></h2>
+						   <p><img className="img-responsive" src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511355864/Practical_Life_sdfinb.jpg" alt=""/></p>   
 						<blockquote className="custom-quote">
 							<p>With the use of child-size materials, children learn everyday skills that enhance motor control, hand-eye coordination and  co-ordination of movements large and small.   This group of activities helps the child grow in independence in terms of taking care of oneself, his environment and social behavior.  Concentration is a natural consequence of these activities as the child chooses an activity, gets involved in performing it and repeating it.  Specific social behavior activities are introduced to the child like saying Namaste, offering things, how to cough/sneeze, talking softly, etc.</p>
 						</blockquote>
-						<h3 className="title" style={{"margin-top": "30px"}}><strong>Sensorial:</strong></h3>
+						<h2 className="title" style={{"margin-top": "30px"}}><strong>Sensorial:</strong></h2>
+						   <p><img className="img-responsive" src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511355865/Sensorial_k8jfkg.jpg" alt=""/></p>   
 						<blockquote className="custom-quote">
 							<p>This group of activities is performed using the senses which are the gateways of intelligence.  The senses such as vision, hearing, touch, smell, taste, kinesthetic etc are used to perform these activities.  These activities indirectly prepare the child for reading and writing.</p>
 						</blockquote>
-						<h3 className="title" style={{"margin-top": "30px"}}><strong>Language:</strong></h3>
+						<h2 className="title" style={{"margin-top": "30px"}}><strong>Language:</strong></h2>
+						   <p><img className="img-responsive" src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511355864/Language_nax3i6.jpg" alt=""/></p>   
 						<blockquote className="custom-quote">
 							<p>Language is offered based on phonetics.  Child is offered many activities orally to enrich his vocabulary quantitatively and qualitatively and materials like the sandpaper letters or movable alphabets help the child work with sounds.  Grammar activities are also offered with material and orally. </p>
 							<p>Stories, rhymes, and conversations help improve the child’s speaking and listening skills.</p>
 						</blockquote>
-						<h3 className="title" style={{"margin-top": "30px"}}><strong>Arithmetic:</strong></h3>
+						<h2 className="title" style={{"margin-top": "30px"}}><strong>Arithmetic:</strong></h2>
+						   <p><img className="img-responsive" src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511355864/Arthametic_p0119s.jpg" alt=""/></p>   
 						<blockquote className="custom-quote">
 							<p>Activities for numbers 1 to 10 which include counting, recognition of numbers, and quantities are offered to lay a strong foundation in arithmetic.  Decimal system of numeration is offered through materials which help the child understand place value with the associated quantity.  Arithmetic operations like addition, subtraction, multiplication and division are offered through material in the later stages around the age of 5 years.</p>
 							<p>More items of human culture such as geography, science, botany, zoology etc are offered through activities at their level of understanding.  Conversation skills are developed through nature walk.  Children are involved in many activities like sowing, watering, weeding, etc.  Life cycle of a butterfly, frog etc are explained and shown to the child.   Children work with the globe, continents, land and water forms, map puzzles etc.  Many simple science experiments like magnet, magnifying glass, sink and float, air experiments are among the science activities shown to the child.</p>

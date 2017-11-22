@@ -22,8 +22,33 @@ export default class MiddleSchool extends Component{
             <div className="row page-row">
                 <article className="welcome col-md-8 col-sm-7">                         
                      
-                    <p><img className="img-responsive" src="https://res.cloudinary.com/dvl9i5pry/image/upload/v1506075338/middle-school_zqacoa.jpg" alt=""/></p>
-                    
+                   <div id="myCarousel" className="carousel slide" data-ride="carousel">
+            <ol className="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" className=""></li>
+                <li data-target="#myCarousel" data-slide-to="1" className="active"></li>
+                <li data-target="#myCarousel" data-slide-to="2" className=""></li>
+                <li data-target="#myCarousel" data-slide-to="3" className=""></li>
+                <li data-target="#myCarousel" data-slide-to="4" className=""></li>
+                <li data-target="#myCarousel" data-slide-to="5" className=""></li>
+
+               
+                </ol><div className="carousel-inner">
+                         <div className="item  active"><img src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511359498/9L2A7802_-_Copy_oclvnu.jpg" alt=""/></div>
+                            <div className="item "><img src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511359498/9L2A7846_e3tizt.jpg" alt=""/></div>
+                
+                            <div className="item"><img src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511359498/9L2A7873_k4ujby.jpg" alt=""/></div>
+                
+                            <div className="item  "><img src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511359498/9L2A7940_xnddgg.jpg" alt=""/></div>
+                            <div className="item "><img src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511359499/9L2A8016_rbzpr9.jpg" alt=""/></div>
+                            <div className="item"><img src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511359497/DSC06559_jqdnna.jpg" alt=""/></div>
+                             </div>
+                    <a className="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span className="glyphicon glyphicon-chevron-left"></span>
+                        <span className="sr-only">Previous</span></a>
+                        <a className="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span className="glyphicon glyphicon-chevron-right"></span>
+                            <span className="sr-only">Next</span></a>
+                            </div>           
                     <h3 className="title" style={{"margin-top": "30px"}}>Curriculum (VI - VIII)</h3>                   
                    <blockquote className="custom-quote">
                         <p>Children need to become self- reliant and independent learners as they go into middle school. The process of transition begins from Class V onwards. Teachers use methods like peer group learning, co-operative learning, project methods and other different media like theatre and newspapers to facilitate learning. Rote learning is not encouraged. Children are instead trained in various study skills by the respective subject teachers and this helps them learn and understand better. From Class VII onwards, children are slowly trained to handle larger portions to make their transition to high school easier.</p>

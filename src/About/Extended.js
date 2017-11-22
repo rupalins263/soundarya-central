@@ -20,7 +20,7 @@ export default class Extended extends Component{
         <div className="page-content">
             <div className="row page-row">
                 <article className="welcome col-md-8 col-sm-7">                         
-                   <p><img className="img-responsive" src="https://res.cloudinary.com/dvl9i5pry/image/upload/v1506075449/extended_i2g0qn.jpg" alt=""/></p>
+                   <p><img className="img-responsive" src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511359874/Extended_Learning_xcukl0.jpg" alt=""/></p>
                      <center>Extended learning to enhance Concept Understanding to the optimum.
                     </center>
                     

@@ -9,7 +9,7 @@
 .img-responsive, .thumbnail a>img, .thumbnail>img {
     display: block;
     max-width: 100%;
-    height: auto;
+
 }
 .desc {
     padding: 15px;

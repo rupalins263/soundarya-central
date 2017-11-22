@@ -23,7 +23,32 @@ export default class Primary extends Component{
                 <article className="welcome col-md-8 col-sm-7">                         
                     
 	                 
-                    <p><img className="img-responsive" src="https://res.cloudinary.com/dvl9i5pry/image/upload/v1506075270/primary1_owemca.jpg" alt=""/></p>
+                    <div id="myCarousel" className="carousel slide" data-ride="carousel">
+            <ol className="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" className=""></li>
+                <li data-target="#myCarousel" data-slide-to="1" className="active"></li>
+                <li data-target="#myCarousel" data-slide-to="2" className=""></li>
+                <li data-target="#myCarousel" data-slide-to="3" className=""></li>
+                <li data-target="#myCarousel" data-slide-to="4" className=""></li>
+                <li data-target="#myCarousel" data-slide-to="5" className=""></li>
+                
+                </ol><div className="carousel-inner">
+                            <div className="item  active"><img src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511358927/DSC06956_rcuz4r.jpg" alt=""/></div>
+                            <div className="item "><img src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511358927/DSC06934_vjyr0c.jpg" alt=""/></div>
+                
+                            <div className="item"><img src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511358928/9L2A8321_mlrle1.jpg" alt=""/></div>
+                
+                            <div className="item  "><img src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511358929/9L2A8320_mv9rju.jpg" alt=""/></div>
+                            <div className="item "><img src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511358928/9L2A8253_wysqlx.jpg" alt=""/></div>
+                            <div className="item"><img src="http://res.cloudinary.com/dvl9i5pry/image/upload/v1511358929/9L2A8161_m53wqj.jpg" alt=""/></div>
+                    </div>
+                    <a className="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span className="glyphicon glyphicon-chevron-left"></span>
+                        <span className="sr-only">Previous</span></a>
+                        <a className="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span className="glyphicon glyphicon-chevron-right"></span>
+                            <span className="sr-only">Next</span></a>
+                            </div>           
                     
                     <h3 className="title" style={{"margin-top": "30px"}}>Curriculum (Grade I to V)</h3>                   
                    <blockquote className="custom-quote">
