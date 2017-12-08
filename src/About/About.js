@@ -26,13 +26,13 @@ export default class About extends Component{
                         <p>The Soundaryans strive in an environment that fosters along with academic achievements, personal growth and development assisted by a team of well qualified and devoted faculty members with the resources that assist on their journey to become a matured whole person.</p>
                         <p>Adding in this journey are the multitude of opportunities for direct student involvement in various activities both inside and outside the classNameroom ensuring that the students will not find themselves waiting for the means to reach their academic personal and professional goals.
                     </p>
-                    <h3 className="title" style={{"margin-top": "30px"}} id="vision">Vision</h3>
+                    <h3 className="title" style={{"margin-top": "30px"}} id="/About#vision">Vision</h3>
                    <blockquote className="custom-quote">
                         <p style={{"color": "#333"}}><i className="fa fa-quote-left"></i>Soundarya Central School aims to be an Institution of Excellence dedicated to produce Global Leaders.</p>
 
                         <p style={{"color": "#333;"}}>A child centered education with the concept of all-round development of an individual child through holistic approach is the foremost philosophy of Soundarya Educationducational Trust.</p>
                     </blockquote>
-                   <h3 className="title" style={{"margin-top": "30px"}} id="mission">Mission</h3>
+                   <h3 className="title" style={{"margin-top": "30px"}} id="/About#mission">Mission</h3>
                    <blockquote className="custom-quote">
                         <ul className="icons-list check pl">    
                             <li>To enable and prepare our students to face the winds of change during their formative years and to acquire knowledge and skills which       will help them to excel in their chosen field.</li>
@@ -48,10 +48,10 @@ export default class About extends Component{
                     <section className="widget has-divider">
                         <h3 className="title">Related Links</h3>
                         <ul className="job-list custom-list-style">
-                                <li><i className="fa fa-caret-right"></i><a href="/About">About Us</a></li>
-                                 <li><i className="fa fa-caret-right"></i><a href="/About#Management">Management</a></li>
-                                <li><i className="fa fa-caret-right"></i><a href="/About#mission">Mission</a></li>
-                                <li><i className="fa fa-caret-right"></i><a href="/About#vision">Vision</a></li>
+                                <li><i className="fa fa-caret-right"></i><a href="/#/About">About Us</a></li>
+                                 <li><i className="fa fa-caret-right"></i><a href="/#/About#Management">Management</a></li>
+                                <li><i className="fa fa-caret-right"></i><a href="/#/About#mission">Mission</a></li>
+                                <li><i className="fa fa-caret-right"></i><a href="/#/About#vision">Vision</a></li>
                         </ul>
                     </section>
                     <section className="widget">
@@ -61,7 +61,7 @@ export default class About extends Component{
     <p className="email"><i className="fa fa-envelope"></i> <a href="#">soundaryacentralschool@gmail.com</a></p>
 </section>
                 </aside>
-                <div className="col-md-12" id="Management">
+                <div className="col-md-12" id="/About#Management">
                     <div className="col-md-6">
                         <h3 className="title" style={{"margin-top": "30px"}} id="chairmans-message">Chairman's Message</h3>
                         <div className="col-md-12" style={{"background":"#FCFCFC","padding":"10px 10px","margin-top":"20px"}}>

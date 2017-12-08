@@ -57,7 +57,7 @@ export default class NewsSingle extends Component{
                         <ul className="breadcrumbs-list">
                             <li className="breadcrumbs-label">You are here:</li>
                             <li><a href="/">Home</a><i className="fa fa-angle-right"></i></li>
-                            <li><a href="/News">News-Events</a><i className="fa fa-angle-right"></i></li>
+                            <li><a href="/#/News">News-Events</a><i className="fa fa-angle-right"></i></li>
                             <li className="current">Events</li>
                         </ul>
                     </div>

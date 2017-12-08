@@ -28,7 +28,7 @@ export default class Event extends Component{
                 if(index<2){
                     var month=new Date(item.eventdate).toDateString().split(" ")[1];
                      var day=new Date(item.eventdate).toDateString().split(" ")[2];
-                          var href=`/NewsSingle?id=${item.eventid}`;
+                          var href=`/#/NewsSingle?id=${item.eventid}`;
                     return(
                         <div className="event-item">
                                         <p className="date-label">
