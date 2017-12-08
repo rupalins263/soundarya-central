@@ -63,17 +63,17 @@ class Nav extends Component{
     
 			
         
-        <li className="nav-item"><a href="/About">About</a></li>
+        <li className="nav-item"><a href="/#/About">About</a></li>
     
                         <li style={{"display":"none"}} className="nav-item" id="about"><a className="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="about.mako#group">About<i className="fa fa-angle-down"></i></a>
                             <ul className="dropdown-menu">                                
                                 
         
-        <li className="nav-item"><a href="/About">About Soundaryans</a></li>
+        <li className="nav-item"><a href="/#/About">About Soundaryans</a></li>
     
                                 
         
-        <li className="nav-item"><a href="/About">Vision and Mission</a></li>
+        <li className="nav-item"><a href="/#/About">Vision and Mission</a></li>
     
     
        
@@ -93,16 +93,16 @@ class Nav extends Component{
            
                             <a className="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Pre Primary</a>
                             <ul className="dropdown-menu">
-                                <li className="nav-item"><a href="/PrePrimary">Montessori</a></li>
-                                <li className="nav-item"><a href="/Kider">Kindergarten</a></li>
+                                <li className="nav-item"><a href="/#/PrePrimary">Montessori</a></li>
+                                <li className="nav-item"><a href="/#/Kider">Kindergarten</a></li>
 
                              </ul>
                         </li>
-                <li className="nav-item"><a href="/Primary">Primary</a></li>
+                <li className="nav-item"><a href="/#/Primary">Primary</a></li>
             
                                                 
                 
-                <li className="nav-item"><a href="/MiddleSchool">Middle School</a></li>
+                <li className="nav-item"><a href="/#/MiddleSchool">Middle School</a></li>
                                         
                                         
                 
@@ -111,8 +111,8 @@ class Nav extends Component{
          </li>
                                 
         
-        <li className="nav-item"><a href="/Extended">Extended Learning</a></li>
-                   <li className="nav-item"><a href="/CoScholastic">Co Scholastic</a></li>
+        <li className="nav-item"><a href="/#/Extended">Extended Learning</a></li>
+                   <li className="nav-item"><a href="/#/CoScholastic">Co Scholastic</a></li>
     
 
                             </ul>
@@ -122,12 +122,12 @@ class Nav extends Component{
                             <ul className="dropdown-menu">
                                 
         
-        <li className="nav-item"><a href="/Admission">Admissions</a></li>
+        <li className="nav-item"><a href="/#/Admission">Admissions</a></li>
     
                                
                                 
         
-        <li className="nav-item"><a href="/CodeOfConduct">Code of Conduct</a></li>
+      
                                     
                             </ul>
                          </li>   
@@ -136,11 +136,12 @@ class Nav extends Component{
                             <ul className="dropdown-menu">
                                 
         
-        <li className="nav-item"><a href="/InfraStructure">Infrastructure</a></li>
+        <li className="nav-item"><a href="/#/InfraStructure">Infrastructure</a></li>
     
                                 
         
-        <li className="nav-item"><a href="/Facilities">Facilities Offered</a></li>
+        <li className="nav-item"><a href="/#/Facilities">Facilities Offered</a></li>
+        <li className="nav-item"><a href="/#/CodeOfConduct">Code of Conduct</a></li>
     
                             </ul>
                          </li> 
@@ -149,11 +150,11 @@ class Nav extends Component{
                             <ul className="dropdown-menu">
                                 
         
-                                        <li className="nav-item"><a href="/Facilitator">Facilitators</a></li>
+                                        <li className="nav-item"><a href="/#/Facilitator">Facilitators</a></li>
                                     
                                                                 
                                         
-                                        <li className="nav-item"><a href="/Interaction">Interaction Training</a></li>
+                                        <li className="nav-item"><a href="/#/Interaction">Interaction Training</a></li>
                                     
                             </ul>
                          </li> 
@@ -171,7 +172,7 @@ class Nav extends Component{
     
 								
         
-        <li className="nav-item"><a href="/Calender">Calendar</a></li>
+        <li className="nav-item"><a href="/#/Calender">Calendar</a></li>
     
 								
         
@@ -189,23 +190,23 @@ class Nav extends Component{
                             <ul className="dropdown-menu">
                                 
         
-                                        <li className="nav-item"><a href="/Gallery">Photos</a></li>
+                                        <li className="nav-item"><a href="/#/Gallery">Photos</a></li>
                                     
                                                                 
                                         
-                                        <li className="nav-item"><a href="/Video">Videos</a></li>
+                                        <li className="nav-item"><a href="/#/Video">Videos</a></li>
                                     
                             </ul>
                          </li> 
-        <li className="nav-item"><a href="/Downloads">Downloads</a></li>
+        <li className="nav-item"><a href="/#/Downloads">Downloads</a></li>
     
                         
         
-        <li className="nav-item"><a href="/Carrier">Careers</a></li>
+        <li className="nav-item"><a href="/#/Carrier">Careers</a></li>
     
 						
         
-        <li className="nav-item"><a href="/ContactUs">Contact Us</a></li>
+        <li className="nav-item"><a href="/#/ContactUs">Contact Us</a></li>
                                                                             
                         </ul>
                 </div>

@@ -11,10 +11,10 @@ export default class Footer extends Component{
                                     <div className="footer-col-inner">
                                         <h3>About</h3>
                                         <ul>
-                                            <li><a href="/About"><i className="fa fa-caret-right"></i>About us</a></li>
-                                            <li><a href="/PrePrimary"><i className="fa fa-caret-right"></i>Pre Primary School</a></li>
-                                            <li><a href="/Primary"><i className="fa fa-caret-right"></i>Primary School</a></li>
-                                            <li><a href="/MiddleSchool"><i className="fa fa-caret-right"></i>Middle School</a></li>
+                                            <li><a href="/#/About"><i className="fa fa-caret-right"></i>About us</a></li>
+                                            <li><a href="/#/PrePrimary"><i className="fa fa-caret-right"></i>Pre Primary School</a></li>
+                                            <li><a href="/#/Primary"><i className="fa fa-caret-right"></i>Primary School</a></li>
+                                            <li><a href="/#/MiddleSchool"><i className="fa fa-caret-right"></i>Middle School</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -22,10 +22,10 @@ export default class Footer extends Component{
                                     <div className="footer-col-inner">
                                         <h3>More Links</h3>
                                         <ul>
-                                            <li><a href="/CoScholastic"><i className="fa fa-caret-right"></i>Co Scholastic</a></li>
-                                            <li><a href="/Extended"><i className="fa fa-caret-right"></i>Extended Learning</a></li>
-                                            <li><a href="/InfraStructure"><i className="fa fa-caret-right"></i>Infrastructure</a></li>
-                                            <li><a href="/Facilities"><i className="fa fa-caret-right"></i>Facilities</a></li>
+                                            <li><a href="/#/CoScholastic"><i className="fa fa-caret-right"></i>Co Scholastic</a></li>
+                                            <li><a href="/#/Extended"><i className="fa fa-caret-right"></i>Extended Learning</a></li>
+                                            <li><a href="/#/InfraStructure"><i className="fa fa-caret-right"></i>Infrastructure</a></li>
+                                            <li><a href="/#/Facilities"><i className="fa fa-caret-right"></i>Facilities</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -34,10 +34,10 @@ export default class Footer extends Component{
                                     <div className="footer-col-inner">
                                         <h3>&nbsp;</h3>
                                         <ul>
-                                            <li><a href="/Admission"><i className="fa fa-caret-right"></i>Admissions</a></li>
-                                            <li><a href="/CodeOfConduct"><i className="fa fa-caret-right"></i>Code of Conduct</a></li>
-                                            <li><a href="/Interaction"><i className="fa fa-caret-right"></i>Interaction Training</a></li>
-                                            <li><a href="/Privacy"><i className="fa fa-caret-right"></i>Privacy Policy</a></li>
+                                            <li><a href="/#/Admission"><i className="fa fa-caret-right"></i>Admissions</a></li>
+                                            <li><a href="/#/CodeOfConduct"><i className="fa fa-caret-right"></i>Code of Conduct</a></li>
+                                            <li><a href="/#/Interaction"><i className="fa fa-caret-right"></i>Interaction Training</a></li>
+                                            <li><a href="/#/Privacy"><i className="fa fa-caret-right"></i>Privacy Policy</a></li>
                                             
                                         </ul>
                                     </div>
