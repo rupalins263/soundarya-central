@@ -117,20 +117,8 @@ class Nav extends Component{
 
                             </ul>
                          </li>   
-                         <li className="nav-item dropdown" id="admissions">
-                            <a className="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Admissions <i className="fa fa-angle-down"></i></a>
-                            <ul className="dropdown-menu">
-                                
-        
-        <li className="nav-item"><a href="/#/Admission">Admissions</a></li>
-    
-                               
-                                
-        
-      
-                                    
-                            </ul>
-                         </li>   
+                         <li className="nav-item"><a href="/#/Admission">Admissions</a></li>
+                        
                          <li className="nav-item dropdown" id="campus">
                             <a className="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Campus Life <i className="fa fa-angle-down"></i></a>
                             <ul className="dropdown-menu">
