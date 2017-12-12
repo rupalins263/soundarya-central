@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import './Contact.css';
 import logo from '../close.png'
 import axios from 'axios';
+import ReactPixel from 'react-facebook-pixel';
 
 export default class ContactUs extends Component{
 
@@ -13,6 +14,9 @@ export default class ContactUs extends Component{
                 res:false,
                 connecting:false
             }
+        }
+        componentWillMount(){
+            ReactPixel.init('157395081538454');
         }
 
         submit(event)
@@ -67,7 +71,7 @@ export default class ContactUs extends Component{
             conectionCompo=<div style={{background:"white",margin:"0 auto",textAlign:"center",height:400,width:400,cursor:"pointer"}}><div style={{width:"100%",height:"50%",backgroundColor:"#33b7a0"}}><p style={{padding:50,fontFamily:'serif',fontSize:25,fontWeight:900,color:"white"}}><img src={logo}/></p></div><div><p style={{padding:50,fontFamily:'serif',fontSize:25,fontWeight:900}}> Sending Message <br/>Please wait</p></div></div>;
         }
         else{
-      
+               {ReactPixel.track('track', 'Lead')}
                 if(this.state.res)
                 {
                     val=<div style={{background:"white",margin:"0 auto",textAlign:"center",height:400,width:400,cursor:"pointer"}}><div style={{width:"100%",height:"50%",backgroundColor:"#33b7a0"}}><p style={{padding:50,fontFamily:'serif',fontSize:25,fontWeight:900,color:"white"}}><img src={logo}/></p></div><div><p style={{padding:50,fontFamily:'serif',fontSize:25,fontWeight:900}}>Thanks!<br/>
