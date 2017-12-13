@@ -1,12 +1,18 @@
 import React,{Component} from 'react';
 import '../Contact/Contact.css';
-
+import ReactPixel from 'react-facebook-pixel';
 import axios from 'axios';
 export default class ContactUs extends Component{
 
+
+    componentWillMount(){
+        ReactPixel.init('157395081538454');
+    }
+
         submit(event)
     {
-        event.preventDefault();
+    ReactPixel.track('track', 'Lead')
+      event.preventDefault();
        var name= document.getElementById("name");
         var phone= document.getElementById("phone");
          var email= document.getElementById("email");
