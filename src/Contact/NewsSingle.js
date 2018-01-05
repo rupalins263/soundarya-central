@@ -20,7 +20,7 @@ export default class NewsSingle extends Component{
         {
             var _this=this;
              console.log(window.location.search.slice(-1))
-           axios.get(`http://198.12.154.44:3333/Central/Events`)
+           axios.get(`http://ec2-18-217-223-214.us-east-2.compute.amazonaws.com/Central/Events`)
              .then((res)=>{
                     console.log(res)
                         var current={};

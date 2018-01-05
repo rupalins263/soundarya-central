@@ -14,7 +14,7 @@ export default class Gallery extends Component{
        this.goBack=this.goBack.bind(this);
     }
     componentDidMount(){
-        axios.get("http://198.12.154.44:3333/Central/Albums")
+        axios.get("http://ec2-18-217-223-214.us-east-2.compute.amazonaws.com/Central/Albums")
              .then((res)=>{
                     console.log(res)
                     this.setState({
@@ -29,7 +29,7 @@ export default class Gallery extends Component{
         })
     }
     getalbums(id){
-              axios.get(`http://198.12.154.44:3333/Central/Image/${id}`)
+              axios.get(`http://ec2-18-217-223-214.us-east-2.compute.amazonaws.com/Central/Image/${id}`)
              .then((res)=>{
                     console.log(res)
                     this.setState({
@@ -50,7 +50,7 @@ export default class Gallery extends Component{
                     return "";
                 }
                 return (
-                     <div key={index} className="col-md-3 col-sm-3 col-xs-12 text-center" style={{cursor:"pointer"}} onClick={()=>{this.getalbums(item.albumid)}}>
+                     <div key={index} className="col-md-3 col-sm-3 col-xs-12 text-center" style={{cursor:"pointer",height:"500px"}} onClick={()=>{this.getalbums(item.albumid)}}>
                                 <div className="album-cover">
                            
                                         
