@@ -1,18 +1,24 @@
 import React,{Component} from 'react';
 import '../Contact/Contact.css';
-
+import ReactPixel from 'react-facebook-pixel';
 import axios from 'axios';
 export default class ContactUs extends Component{
 
+
+    componentWillMount(){
+        ReactPixel.init('157395081538454');
+    }
+
         submit(event)
     {
-        event.preventDefault();
+    ReactPixel.track('track', 'Lead')
+      event.preventDefault();
        var name= document.getElementById("name");
         var phone= document.getElementById("phone");
          var email= document.getElementById("email");
 
          var message= document.getElementById("message");
-          axios.post('http://198.12.154.44:3333/Central/ContactUs', {
+          axios.post('http://ec2-18-217-223-214.us-east-2.compute.amazonaws.com/Central/ContactUs', {
                 "name":name.value,
                 "email":email.value,
                 "number":phone.value,
@@ -45,7 +51,46 @@ export default class ContactUs extends Component{
         </header> 
         <div className="page-content">
             <div className="row page-row">
-                <article className="welcome col-md-8 col-sm-7">                                                                                
+                <article className="welcome col-md-8 col-sm-7"> 
+
+                <p></p>  
+                    
+                    <h3 className="title sub-heading">For admissions contact:</h3>  
+                    
+                      <form onSubmit={this.submit.bind(this)}>
+                      <div className="form-group name">
+                          <label for="name">Name<sup>*</sup></label>
+                          <input id="name" type="text" className="form-control req_field" placeholder="Enter your name"/>
+                      </div>
+                      <div className="form-group sex">
+                          <label for="name">Sex<sup>*</sup></label>
+                          <input id="gender" type="text" className="form-control req_field" placeholder="Enter your Gender"/>
+                      </div>
+                      <div className="form-group email">
+                          <label for="email">Email <span className="required">*</span></label>
+                          <input id="email" type="email" className="form-control req_field req_field_email" placeholder="Enter your email"/>
+                      </div>
+                      
+                      <div className="form-group phone">
+                          <label for="phone">Phone<sup>*</sup></label>
+                          <input id="phone" type="tel" className="form-control" placeholder="Enter your contact number"/>
+                      </div>
+                      <div className="form-group country">
+                          <label for="phone">Country<sup>*</sup></label>
+                          <input id="phone" type="tel" className="form-control" placeholder="Enter your Country Name"/>
+                      </div>
+                      <div className="form-group course">
+                          <label for="phone">Course<sup>*</sup></label>
+                          <input id="pihone" type="tel" className="form-control" placeholder="Enter your Desired Course"/>
+                      </div>
+                      <div className="form-group message">
+                          <label for="message">Ask your Admission Related Quires<span className="required">*</span></label>
+                          <textarea id="message" className="form-control req_field" rows="4" placeholder="Enter your message here..."></textarea>
+                      </div>
+                      <button type="submit" className="btn btn-theme" >Submit</button>
+  
+                  </form>     
+                  <p><br/><br/></p>                                                                          
                     <p>Finding the right school is all about finding the right environment for a child and we, at Soundarya Central School , Soundarya Nagar strive with the same goal in mind. Registration for Admission to Soundarya Central School is open to all children irrespective of caste, creed, race, region or gender.As per the policy and directive of CBSE (Central Board of Secondary Education), we have the following guidelines for admission :
                     </p><ul className="icons-list check">
                     <li>Parents have to fill up the prescribed application form and register the same in the school office before the last date.</li>
@@ -62,43 +107,7 @@ export default class ContactUs extends Component{
                     <li>Driving License of the parent</li>
                     <li>Copy of the Rent Agreement</li>
 </ul>
-                    <p></p>  
-                    
-                  <h3 className="title sub-heading">For admissions contact:</h3>  
-                  
-                    <form onSubmit={this.submit.bind(this)}>
-                    <div className="form-group name">
-                        <label for="name">Name<sup>*</sup></label>
-                        <input id="name" type="text" className="form-control req_field" placeholder="Enter your name"/>
-                    </div>
-                    <div className="form-group sex">
-                        <label for="name">Sex<sup>*</sup></label>
-                        <input id="gender" type="text" className="form-control req_field" placeholder="Enter your Gender"/>
-                    </div>
-                    <div className="form-group email">
-                        <label for="email">Email <span className="required">*</span></label>
-                        <input id="email" type="email" className="form-control req_field req_field_email" placeholder="Enter your email"/>
-                    </div>
-                    
-                    <div className="form-group phone">
-                        <label for="phone">Phone<sup>*</sup></label>
-                        <input id="phone" type="tel" className="form-control" placeholder="Enter your contact number"/>
-                    </div>
-                    <div className="form-group country">
-                        <label for="phone">Country<sup>*</sup></label>
-                        <input id="phone" type="tel" className="form-control" placeholder="Enter your Country Name"/>
-                    </div>
-                    <div className="form-group course">
-                        <label for="phone">Course<sup>*</sup></label>
-                        <input id="pihone" type="tel" className="form-control" placeholder="Enter your Desired Course"/>
-                    </div>
-                    <div className="form-group message">
-                        <label for="message">Ask your Admission Related Quires<span className="required">*</span></label>
-                        <textarea id="message" className="form-control req_field" rows="4" placeholder="Enter your message here..."></textarea>
-                    </div>
-                    <button type="submit" className="btn btn-theme" >Submit</button>
-
-                </form>
+                
                 </article>
                 <aside className="page-sidebar  col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1">  
                     <section className="widget has-divider">

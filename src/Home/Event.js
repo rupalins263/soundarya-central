@@ -1,6 +1,10 @@
 import React,{Component} from 'react';
 import './Home.css';
 import axios from 'axios';
+import ReactPixel from 'react-facebook-pixel';
+
+
+
 export default class Event extends Component{
     constructor(){
         super();
@@ -9,7 +13,8 @@ export default class Event extends Component{
         }
     }
     componentWillMount(){
-           axios.get(`http://198.12.154.44:3333/Central/Events`)
+        ReactPixel.init('157395081538454');
+           axios.get(`http://ec2-18-217-223-214.us-east-2.compute.amazonaws.com/Central/Events`)
              .then((res)=>{
                     console.log(res)
                     this.setState({
@@ -58,65 +63,37 @@ export default class Event extends Component{
         return(
     <div className="container" style={{marginTop:"50px",}}>
      <div className="row cols-wrapper">
-                <div className="col-md-3">
-			
-                    <section className="events">
-                        <h1 className="section-heading text-highlight"><span className="line">Events</span></h1>
-                        <div className="section-content">
-                              {events}
-                            <a className="read-more"  style={{marginBottom:"30px"}}href="/Calender">All events<i className="fa fa-chevron-right"></i></a>
+            <div  className="col-md-8">
+                <div className="row"> 
+                        <div className="col-md-5">
+                    
+                            <section className="events">
+                                <h1 className="section-heading text-highlight"><span className="line">Events</span></h1>
+                                <div className="section-content">
+                                    {events}
+                                    <a className="read-more"  style={{marginBottom:"30px"}}href="/Calender">All events<i className="fa fa-chevron-right"></i></a>
+                                </div>
+                            </section>
+
+                            
+                            
                         </div>
-                    </section>
-
-		    <section className="widget has-divider" style={{"background":"#FFF"}}>
-                        <iframe width="280" height="310" src="https://www.youtube.com/embed/BQMYd0dIqhU" frameborder="0" allowfullscreen=""></iframe>
-                    </section>
-					
-					<section className="widget has-divider" style={{"background":"#FFF","display":"none"}}>
-					   <h1 className="section-heading text-highlight"><span className="line">Photo Gallery</span></h1>
-					   
-						<a className="prettyphoto col-md-6 bg-pad" rel="prettyPhoto[gallery]" title="Learning at Soundarya Central School" href="assets/images/gallery/gallery-1.jpg">                    
-						<img className="img-responsive bg-img" src="assets/images/gallery/gallery-1.jpg" alt="central-schools-in-peenya"/>                                                                                                         
-						</a>                        
-
-						<a className="prettyphoto col-md-6 bg-pad" rel="prettyPhoto[gallery]" title="Activities at Soundarya Central School" href="assets/images/gallery/gallery-2.jpg">                    
-						<img className="img-responsive bg-img" src="assets/images/gallery/gallery-2.jpg" alt="middle-school-near-Laggere"/>                                                                                                         
-						</a>                        
-
-						<a className="prettyphoto col-md-6 bg-pad" rel="prettyPhoto[gallery]" title="Horse Riding classNamees at Soundarya Central School" href="assets/images/gallery/gallery-12.jpg">                    
-						<img className="img-responsive bg-img" src="assets/images/gallery/gallery-12.jpg" alt="cbse-schools"/>                                                                                                         
-						</a>  
-						
-						<a className="prettyphoto col-md-6 bg-pad" rel="prettyPhoto[gallery]" title="Swimming classNamees at Soundarya Central School" href="assets/images/gallery/gallery-9.jpg">                    
-						<img className="img-responsive bg-img" src="assets/images/gallery/gallery-9.jpg" alt="schools-near-Jalahalli"/>                                                                                                         
-						</a>
-						
-						<a className="prettyphoto col-md-6 bg-pad" rel="prettyPhoto[gallery]" title="Kids play area" href="assets/images/gallery/gallery-14.jpg">                    
-						<img className="img-responsive bg-img" src="assets/images/gallery/gallery-14.jpg" alt="best-schools-peenya"/>                                                                                                         
-						</a>  
-					   
-						<a className="prettyphoto col-md-6 bg-pad" rel="prettyPhoto[gallery]" title="Lab Facilities at Soundarya Central School" href="assets/images/gallery/gallery-15.jpg">                    
-						<img className="img-responsive bg-img" src="assets/images/gallery/gallery-15.jpg" alt="best-school"/>                                                                                                         
-						</a>                                                    
-					
-					</section>
+                        <div className="col-md-7 text-justify">						
+                            <p style={{"font-size":"14px"}}>True education does not limit itself to grades and marks; instead it builds the confidence in the child to embark on a never ending journey of enquiry. Education equips a child to become a world citizen whose horizon is the universe. A student thus educated with the universe in mind is spurred to enhance the quality of life on the universe. Such a child is empowered to bring dramatic changes which help in the very evolution of mankind. Students geared to revolutionize the earth perceive and achieve good results as mere by products of their larger goal.</p>
+                            <p style={{"font-size":"14px"}}>I wish the Newsletter <b>"The soaring Falcon"</b> will be an informative &amp; creative platform to exhibit the latent talents of the young students of our institution.</p>
+                            <div className="col-md-12 col-xs-12" style={{"padding-left":"0","height":"370px","overflow":"auto","margin-top":"10px"}}>
+                                {
+                                    ReactPixel.pageView() // For tracking page view 
+                                    // React.track( event, data ) // For tracking default events, more info about events and data https://developers.facebook.com/docs/ads-for-websites/pixel-events/v2.9 
+                                    // React.trackCustom( event, data )
+                                }
+                            </div>
+                        </div>
                 </div>
-                <div className="col-md-5 text-justify">						
-					<p style={{"font-size":"14px"}}>True education does not limit itself to grades and marks; instead it builds the confidence in the child to embark on a never ending journey of enquiry. Education equips a child to become a world citizen whose horizon is the universe. A student thus educated with the universe in mind is spurred to enhance the quality of life on the universe. Such a child is empowered to bring dramatic changes which help in the very evolution of mankind. Students geared to revolutionize the earth perceive and achieve good results as mere by products of their larger goal.</p>
-					<p style={{"font-size":"14px"}}>I wish the Newsletter <b>"The soaring Falcon"</b> will be an informative &amp; creative platform to exhibit the latent talents of the young students of our institution.</p>
-					<div className="col-md-12 col-xs-12" style={{"padding-left":"0","height":"370px","overflow":"auto","margin-top":"10px"}}>
-						<h4 style={{"margin-bottom":"10px","padding":"10px 0"}}>Ants Summer Camp</h4>
-						<iframe width="100%" height="315" src="https://www.youtube.com/embed/ImVRbtPLvTw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
-						<h4 style={{"margin-bottom":"10px","padding":"10px 0"}}>3rd Annual Day - 2017</h4>
-						<iframe width="100%" height="315" src="https://www.youtube.com/embed/pFEFJnKnU9A?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
-						<h4 style={{"margin-bottom":"10px","padding":"10px 0"}}>3rd Annaual Day Part 2</h4>
-						<iframe width="100%" height="315" src="https://www.youtube.com/embed/oJBQiJwpBqQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
-						<h4 style={{"margin-bottom":"10px","padding":"10px 0"}}>Speech on Mahatma Gandhiji.</h4>
-						<iframe width="100%" height="315" src="https://www.youtube.com/embed/F1XtkOpu1bM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
-						<h4 style={{"margin-bottom":"10px","padding":"10px 0"}}>Soundarya Aquatic Center</h4>
-						<iframe width="100%" height="315" src="https://www.youtube.com/embed/F23Fo1bR34o?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
-					</div>
-				</div>
+                <div className="row">
+                    
+                </div>
+            </div>
                 <div className="col-md-4">
                     <section className="links">
                       
